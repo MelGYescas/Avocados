@@ -1,3 +1,68 @@
-@import 'tailwindcss/dist/base.css';
-@import 'tailwindcss/dist/components.css';
-@import 'tailwindcss/dist/utilities.css';
+@import "../_snowpack/pkg/tailwindcss/dist/base.css";
+@import "../_snowpack/pkg/tailwindcss/dist/components.css";
+@import "../_snowpack/pkg/tailwindcss/dist/utilities.css";
+:root {
+    --white: #ffffff;
+    --light-green: #CFF6CF;
+    --gray: #6b7280;
+    --light-pink:#F6DEF6;
+    --pink: #E5CFE5;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+body{
+    font-family: 'Quicksand', sans-serif;;
+}
+.titt{
+    background-color: var(--light-pink);
+    color: var(--pink);
+    border-radius: 20px;
+    margin: 50px 50px 0px 50px;
+    border: 20px;
+    box-shadow: 5px 5px var(--light-green);
+}
+.fron{
+    color: #78487c;
+    font-weight: 500;
+    padding-top: 25px;
+}
+#app{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    place-content: center;
+}
+.product-container{
+    background-color: var(--light-green);
+    display: grid;
+    grid-template-columns: 250px 150px;
+    place-content: center;
+    border: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 25px;
+    box-shadow: 5px 5px var(--light-pink);
+}
+
+.image{
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.title{
+    font-size: var(--lg);
+    color: var(--pink);
+    font-weight: 700;
+    text-shadow: 1px 1px 2px var(--gray);
+}
+p.price{
+    padding-top: 25px;
+    padding-left: 25px;
+    font-size:xx-large;
+    color: var(--gray);
+
+}
+@media (max-width: 640px) {
+    
+}
